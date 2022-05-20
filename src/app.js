@@ -4,7 +4,7 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const getWeather = require('./utils/getWeather')
 const request = require('postman-request')
-const port = process.env.PORT || 3300
+const port = process.env.PORT || 80
 const cors = require('cors')
 
 const app = express()
