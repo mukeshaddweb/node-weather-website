@@ -48,6 +48,8 @@ header a {
 input {
     border: 1px solid #cccccc;
     padding: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 button {
