@@ -27,7 +27,7 @@ formElement.addEventListener('submit',(e)=>{
     feelslike_message.textContent=""
     forcast_message.textContent = ''
 
-    fetch('http://localhost:3300/weather?address='+location+'').then((response) => {
+    fetch('weather?address='+location+'').then((response) => {
         response.json().then((data) => {
             // console.log(place,forcast, feelsLike, temprature)
             if(data.error){
