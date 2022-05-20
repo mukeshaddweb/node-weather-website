@@ -2,7 +2,7 @@
 
 console.log('javascript file ')
 
-fetch('/weather?').then((response) => {
+fetch('/weather?',{mode: 'no-cors'}).then((response) => {
     response.json().then((data)=>{
         console.log(data)
     })
