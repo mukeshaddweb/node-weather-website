@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode')
 const getWeather = require('./utils/getWeather')
 const request = require('postman-request')
 const port = process.env.PORT || 3300
+const cors = require('cors')
 
 const app = express()
 
@@ -23,6 +24,7 @@ hbs.registerPartials(partialsPath)
 
 //setup static directory to serve
 app.use(express.static(publicDirectoryPath))
+app.use(cors())
 
 // "", "/help", "/about"
 
