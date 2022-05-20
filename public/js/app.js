@@ -2,7 +2,7 @@
 
 console.log('javascript file ')
 
-fetch('http://localhost:3300/weather?').then((response) => {
+fetch('/weather?').then((response) => {
     response.json().then((data)=>{
         console.log(data)
     })

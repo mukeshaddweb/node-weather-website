@@ -4,6 +4,7 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const getWeather = require('./utils/getWeather')
 const request = require('postman-request')
+const port = process.env.PORT || 3000
 
 const app = express()
 
@@ -96,6 +97,6 @@ app.get('*', (req, res) => {
 
 
 
-app.listen(3300, () => {
-    console.log('server is running on 3300 port')
+app.listen(port, () => {
+    console.log('server is running on '+port+' port')
 } )
